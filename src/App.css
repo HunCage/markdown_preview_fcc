@@ -1,71 +1,55 @@
-body {
-  width: 100vw;
-  height: 100%;
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
-  
-}
-
 #root {
-  background-color: #537ace;
-  width: 100%;
-  height: 100%;
-
+	width: 100%;
+	height: 100%;
+	background-color: #537ace;
 }
 
 .App {
-  text-align: center;
-    /* margin: 0 auto; */
-
+	text-align: center;
 }
 
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
-} */
 .App-header {
-  background-color: #282c34;
-  height: 9vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(5px + 2vmin);
-  color: white;
+	background-color: #282c34;
+	height: 7vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(5px + 2vmin);
+	color: white;
 }
 
-/* main {
-  display: flex;
-  justify-content: center;
-  /* margin: 0 auto; 
-  width: 75vw;
-} */
-
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
-
-
-.Tarea {
-  /* width: 100%; */
-  /* flex-direction: column;
-  align-items: center;
-  justify-content: center; */
-
+.editorCard,
+.previewCard {
+	box-shadow: 3px 3px 7px;
 }
 
-/* .App-link {
-  color: #61dafb;
+.textarea {
+	width: 100%;
+	height: 100%;
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+.textarea:focus {
+  border-radius: 3px;
+	box-shadow: -2px -2px 3px 3px inset;
+  outline: none;
+}
+
+#preview {
+	text-align: left;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+	padding: 5px;
+	font-weight: bold;
+	color: #000;
+}
+
+pre {
+	padding: 10px;
+	background-color: rgb(177, 200, 219);
+}
