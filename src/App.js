@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import "./App.css";
-import bootstrap from "bootstrap-4-react";
+// import Bootstrap from "bootstrap-4-react";
 import marked from "marked";
 import Prism from "prismjs";
+
+const bootstrap = 'mb-0'
 
 marked.setOptions({
 	breaks: true,
@@ -64,7 +66,7 @@ const App = () => {
 	return (
 		<div className="App w-100 m-auto">
 			<header className="App-header mb-4">
-				<p>
+				<p className={bootstrap}>
 					<code>Markdown Previewer</code>
 				</p>
 			</header>
